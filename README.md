@@ -1,1 +1,2 @@
-# wordpress_basic
+# WordPress講座 基礎編
+このリポジトリは「WordPress講座 基礎編」で使用するファイルや事前説明の為のものです。
