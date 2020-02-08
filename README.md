@@ -25,11 +25,11 @@
 XAMPP(MAMP)、もしくはLOCALを使用して自分のPCでWordPressが動くようにしておいてください。  
 下記サイト様を参考にインストールを行っていけば、大丈夫かと思います。  
 
-## XAMPP
+### XAMPP
 https://bazubu.com/xampp-wordpress-23795.html  
 
-## MAMPP
+### MAMPP
 https://bazubu.com/how-to-insall-wp-in-mamp-23798.html
 
-## LOCAL
+### LOCAL
 https://souken-blog.com/2017/11/06/wordpress-local/
