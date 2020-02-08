@@ -3,6 +3,10 @@ $glo-nav-height: 70px;
 $section-margin-bottom: 50px;
 $slick-dots-size: 15px;
 
+body {
+    font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
 img {
     max-width: 100%;
 }
@@ -13,6 +17,10 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+th {
+    vertical-align: middle;
 }
 
 section {
@@ -127,16 +135,18 @@ a, a:hover {
             width: 160px;
             a {
                 display: block;
-                background-color: #4b5189;
+                background-color: #4481eb;
+                background-image: linear-gradient(to left, #4481eb 0%, #04befe 100%);;
                 height: 40px;
                 line-height: 40px;
                 text-align: center;
                 border-radius: 3px;
                 color: #fff;
-                transition: 0.2s all;
+                transition: 0.4s all;
 
                 &:hover {
-                    background-color: #7b69fe;
+                    background-color: #4481eb;
+                    background-image: none;
                 }
             }
         }
@@ -153,6 +163,77 @@ main {
         margin-bottom: $section-margin-bottom;
     }
 
+    .catch {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+        .top-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            width: 80%;
+            color: #fff;
+            text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: .5);
+            z-index: 10;
+
+            .message-title {
+                line-height: 3.5;
+            }
+        }
+
+        .catch-inner {
+            opacity: 0;
+        }
+
+        .isPlay {
+            animation-name: play;
+            animation-duration: 2.0s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(.8,0,.5,1);
+            position: relative;
+            opacity: 1 !important;
+        }
+
+        .isPlay:before {
+            animation-name: maskOut;
+            animation-duration: 1.5s;
+            animation-delay: 2.5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(.8,0,.5,1);
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: #182848;
+        }
+
+        @keyframes play {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes maskOut {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
+        }
+    }
+
     .top-slides {
         height: 100vh;
         overflow: hidden;
@@ -164,22 +245,26 @@ main {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                transform-origin: center top;
+                transition: 5s ease-out;
             }
 
-            .slide-message {
+            &:after {
+                content: '';
+                display: block;
                 position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translateY(-50%) translateX(-50%);
-                width: 80%;
-                text-align: center;
-                color: #fff;
-                text-shadow: 0px 0px 5px rgba($color: #000000, $alpha: .5);
-
-                .message-title {
-                    font-weight: 600;
-                }
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                opacity: .8;
+                background-color: #4b6cb7;
+                background-image: linear-gradient(to left, #182848, #4b6cb7);
             }
+        }
+
+        .slick-active img {
+            transform: scale(1.1);
         }
 
         .slick-dots {
@@ -431,6 +516,13 @@ footer {
                     border-bottom-color: #333;
                 }
             }
+        }
+    }
+
+    main .catch {
+        .top-message .message-title {
+            line-height: 2.5;
+            font-size: 1.5rem;
         }
     }
 

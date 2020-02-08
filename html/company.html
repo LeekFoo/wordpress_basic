@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>サイト名</title>
+    <title>企業概要 | サイト名</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -31,8 +31,8 @@
     <script src="js/custom.js" defer></script>
 </head>
 
-<body class="home">
-    <header class="site-head">
+<body id="company">
+    <header class="site-head bg-white">
         <div class="site-title">
             <h1>
                 <a href="index.html">サイトタイトル</a>
@@ -55,49 +55,58 @@
         </nav>
     </header>
     <main>
-        <section class="catch">
-            <div class="catch-inner">
-                <div class="top-message">
-                    <h2 class="message-title">
-                        もし今日が人生最後の日だとしたら、<br>
-                        今やろうとしていることは<br>
-                        本当に自分のやりたいことだろうか？
-                    </h2>
-                    <p>
-                        とりあえずご飯を食べよう。<br>
-                        話はそれからだ。
-                    </p>
-                </div>
-                <div class="top-slides">
-                    <div class="slide">
-                        <img class="slide-img" src="img/top_slider01.jpg" alt="スライド1">
-                    </div>
-                    <div class="slide">
-                        <img class="slide-img" src="img/top_slider02.jpg" alt="スライド2">
-                    </div>
-                </div>
+        <section class="page-title">
+            <div class="breadcrumbs d-none d-md-block">
+                <ol>
+                    <li><a href="index.html">ホーム</a>&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></li>
+                    <li>企業概要</li>
+                </ol>
             </div>
+            <h1 class="main-title">
+                企業概要
+            </h1>
         </section>
-        <section class="top-news" data-aos="fade-up">
+
+        <section class="content">
             <div class="container">
-                <h2 class="sec-title">お知らせ</h2>
-                <div class="row">
-                    <div class="news col-6 col-md-3">
-                        <a href="new-detail.html">
-                            <img class="news-img" src="https://placehold.jp/350x240.png" alt="お知らせタイトル">
-                            <h3 class="news-title">お知らせタイトル</h3>
-                            <div class="news-cate">プレスリリース</div>
-                            <dvi class="news-date">20.02.07</dvi>
-                        </a>
-                    </div>
-                    <div class="news col-6 col-md-3">
-                        <a href="new-detail.html">
-                            <img class="news-img" src="https://placehold.jp/350x240.png" alt="お知らせタイトル">
-                            <h3 class="news-title">お知らせタイトル</h3>
-                            <div class="news-cate">プレスリリース</div>
-                            <dvi class="news-date">20.02.07</dvi>
-                        </a>
-                    </div>
+                <div class="" data-aos="fade-up">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">企業名</th>
+                                <td>ほげほげ会社</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">URL</th>
+                                <td>https://hogehoge.co.jp</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">所在地</th>
+                                <td>〒000-0000<br>京都府京都市北区○○○</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">設立</th>
+                                <td>2020年2月</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">資本金</th>
+                                <td>35億円</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">取引金融機関</th>
+                                <td>
+                                    <ul class="bank-list">
+                                        <li>なんたら銀行</li>
+                                        <li>ほげん銀行</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">お問い合わせ</th>
+                                <td><a href="#">こちら</a>からお問い合わせください。</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
