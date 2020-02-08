@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>サイト名</title>
+    <title>お知らせ | サイト名</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,8 +29,8 @@
     <script src="js/custom.js" defer></script>
 </head>
 
-<body class="home">
-    <header class="site-head">
+<body id="news">
+    <header class="site-head bg-white">
         <div class="site-title">
             <h1>
                 <a href="index.html">サイトタイトル</a>
@@ -38,7 +38,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="news.html">お知らせ</a></li>
+                <li><a href="#">お知らせ</a></li>
                 <li><a href="#">製品情報</a></li>
                 <li><a href="#">会社情報</a></li>
             </ul>
@@ -53,33 +53,28 @@
         </nav>
     </header>
     <main>
-        <section class="top-slides">
-            <div class="slide">
-                <div class="slide-message">
-                    <h2 class="message-title">WordPressは裏切らない</h2>
-                    <p>
-                        かもしれないですし、そうでないかもしれない。<br>
-                        全ては己次第。
-                    </p>
-                </div>
-                <img class="slide-img" src="img/top_slider01.jpg" alt="スライド1">
+        <section class="page-title">
+            <div class="breadcrumbs d-none d-md-block">
+                <ol>
+                    <li><a href="index.html">ホーム</a>&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></li>
+                    <li>お知らせ</li>
+                </ol>
             </div>
-            <div class="slide">
-                <div class="slide-message">
-                    <h2 class="message-title">PHP最高</h2>
-                    <p>
-                        かもしれないですし、そうでないかもしれない。<br>
-                        全ては己次第。
-                    </p>
-                </div>
-                <img class="slide-img" src="img/top_slider02.jpg" alt="スライド2">
-            </div>
+            <h2>
+                お知らせ
+            </h2>
         </section>
-        <section class="top-news">
-            <div class="container">
-                <h2 class="sec-title">お知らせ</h2>
-                <div class="row">
-                    <div class="news col-6 col-md-3">
+
+        <section class="content">
+            <div class="container row">
+                <aside class="side-menu d-none d-md-block col-md-4">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-circle-right"></i>2020年</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-circle-right"></i>2019年</a></li>
+                    </ul>
+                </aside>
+                <div class="row col-12 col-md-8">
+                    <div class="news col-6 col-md-4">
                         <a href="#">
                             <img class="news-img" src="https://placehold.jp/350x240.png" alt="お知らせタイトル">
                             <h3 class="news-title">お知らせタイトル</h3>
@@ -87,7 +82,7 @@
                             <dvi class="news-date">20.02.07</dvi>
                         </a>
                     </div>
-                    <div class="news col-6 col-md-3">
+                    <div class="news col-6 col-md-4">
                         <a href="#">
                             <img class="news-img" src="https://placehold.jp/350x240.png" alt="お知らせタイトル">
                             <h3 class="news-title">お知らせタイトル</h3>

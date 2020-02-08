@@ -19,14 +19,21 @@ $(function(){
     const header = $('header');
     const nav = $('nav');
 
-    // グロナビの表示設定
+    // トップへ戻るボタン、グロナビの表示設定
     $(window).on('load scroll', function() {
         if($(window).scrollTop() > 100) {
-            header.addClass('bg-white');
             $('.top-btn').fadeIn();
         } else {
-            header.removeClass('bg-white');
             $('.top-btn').fadeOut();
+        }
+
+        // サイトトップの場合
+        if($('body').hasClass('home')) {
+            if($(window).scrollTop() > 100) {
+                header.addClass('bg-white');
+            } else {
+                header.removeClass('bg-white');
+            }
         }
     });
 
