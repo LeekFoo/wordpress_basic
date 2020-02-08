@@ -3,6 +3,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  padding-left: 0;
+}
+
 li {
   list-style-type: none;
 }
@@ -251,12 +255,20 @@ main .page-title {
   color: #fff;
 }
 
-main .page-title h2 {
+main .page-title .main-title {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+  font-size: 2rem;
+}
+
+main .date {
+  display: block;
+  font-size: 0.7rem;
+  margin-bottom: 5px;
 }
 
 main .breadcrumbs {
@@ -285,19 +297,19 @@ main .side-menu li {
   border-bottom: 1px solid #ccc;
 }
 
-main .side-menu li a {
+main .side-menu a {
   display: inline-block;
   width: 100%;
   padding: 10px 0;
   color: #000;
 }
 
-main .side-menu li a i {
+main .side-menu a i {
   color: #4b5189;
   margin-right: .5rem;
 }
 
-main .side-menu li a:hover {
+main .side-menu a:hover {
   color: #4b5189;
 }
 
