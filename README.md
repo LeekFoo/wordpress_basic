@@ -22,10 +22,6 @@ https://bazubu.com/how-to-insall-wp-in-mamp-23798.html
 ### LOCAL
 https://souken-blog.com/2017/11/06/wordpress-local/
 
-## お問い合わせページについて
-お問い合わせページは「Contact Form 7」というプラグインを使用して作っていく予定です。  
-WordPressの開発環境が用意できている場合は、事前に「Contact Form 7」をインストール→有効化しておいてください。
-
 ## プラグインについて
 今回のサイトを作るにあたり、下記のプラグインを使用しますので事前にインストールをしておいてくださりますと幸いです。
 * Contact Form 7
