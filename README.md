@@ -1,6 +1,9 @@
 # WordPress講座 基礎編
 このリポジトリは「WordPress講座 基礎編」で使用するファイルや事前説明の為のものです。  
-今回は[こちらのサイト](https://leekfoo.github.io/wp-html/)をワードプレスのオリジナルテーマに落とし込んでいきます。
+今回は[こちらのサイト](https://leekfoo.github.io/wp-html/)をワードプレスのオリジナルテーマに落とし込んでいきます。  
+本サイトにアップしているファイルのダウンロード方法はこちらのサイトを参考にしてください。  
+
+https://qiita.com/okamot_dmc/items/c6cd951a75449c201d9a
 
 ## 開発環境の構築について
 
