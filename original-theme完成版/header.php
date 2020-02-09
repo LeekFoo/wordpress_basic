@@ -27,14 +27,13 @@
                 wp_nav_menu( array(
                   'theme_location' => 'global',
                   'menu_class'      => 'global-nav__list',
-                  'container'      => 'nav',
                   'container_class'=> 'global-nav',
                   'depth'          => 1,
                 ) );
               }
             ?>
             <div class="contact-btn">
-                <a class="" href="<?php echo home_url('/contact'); ?>">お問合せ</a>
+                <a class="" href="<?php echo home_url('/contact'); ?>">㝊啝坈㝛</a>
             </div>
             <div class="navToggle">
                 <span></span>
