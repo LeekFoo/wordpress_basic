@@ -27,6 +27,10 @@ a, a:hover {
   text-decoration: none;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 .top-btn {
   position: fixed;
   bottom: 0;
@@ -400,19 +404,15 @@ main .breadcrumbs {
   color: #fff;
 }
 
-main .breadcrumbs ol {
-  padding-left: 0;
-}
-
 main .breadcrumbs li {
   display: inline-block;
 }
 
-main .breadcrumbs li a {
+main .breadcrumbs a {
   color: #fff;
 }
 
-main .breadcrumbs li a:hover {
+main .breadcrumbs a:hover {
   text-decoration: underline;
 }
 

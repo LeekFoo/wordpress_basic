@@ -31,6 +31,10 @@ a, a:hover {
     text-decoration: none;
 }
 
+.container {
+    margin: 0 auto;
+}
+
 .top-btn {
     position: fixed;
     bottom: 0;
@@ -349,19 +353,15 @@ main {
         font-size: 0.8rem;
         color: #fff;
 
-        ol {
-            padding-left: 0;
-        }
-
         li {
             display: inline-block;
+        }
 
-            a {
-                color: #fff;
+        a {
+            color: #fff;
 
-                &:hover {
-                    text-decoration: underline;
-                }
+            &:hover {
+                text-decoration: underline;
             }
         }
     }
