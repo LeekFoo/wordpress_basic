@@ -6,6 +6,10 @@
 
 https://qiita.com/okamot_dmc/items/c6cd951a75449c201d9a
 
+## WordPressへの組み込み例（完成見本）
+実際にオリジナルテーマとしてWordPressに組み込んだサイトはこちらです。  
+http://love-negi.daa.jp/wordpress/
+
 ## 開発環境の構築について
 
 XAMPP(MAMP)、もしくはLOCALを使用して自分のPCでWordPressが動くようにしておいてください。  
