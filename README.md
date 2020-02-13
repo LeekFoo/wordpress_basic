@@ -10,6 +10,10 @@ https://qiita.com/okamot_dmc/items/c6cd951a75449c201d9a
 実際にオリジナルテーマとしてWordPressに組み込んだサイトはこちらです。  
 http://love-negi.daa.jp/wordpress/
 
+## 講座にて使用したスライド
+今回の講座に使用したスライドは下記URLになります。  
+https://docs.google.com/presentation/d/16WSNdu8P2MhyhmxCqlJfCsk6cAmzr7cI45GDgW6b58U
+
 ## 開発環境の構築について
 
 XAMPP(MAMP)、もしくはLOCALを使用して自分のPCでWordPressが動くようにしておいてください。  
